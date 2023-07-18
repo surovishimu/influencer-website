@@ -1,0 +1,223 @@
+/* font family Poppins from google font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,800;1,300;1,700&family=Work+Sans:wght@400;600;700;800&display=swap');
+
+/* shared style */
+
+* {
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* nav design start */
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 100px;
+
+}
+
+.nav-title {
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.nav-menues ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+
+}
+
+.nav-menues ul li a {
+    text-decoration: none;
+    margin-right: 25px;
+    color: #131212;
+    font-weight: 600px;
+    font-size: 1rem;
+
+}
+
+.nav-menues ul li i {
+    margin-right: 25px;
+}
+
+/* nav design end */
+
+/* banner design start */
+.banner-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 50px 100px;
+
+}
+
+.banner-title {
+    width: 582px;
+    height: 133px;
+    color: #3A3A3A;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.banner-text {
+    width: 505px;
+    height: 60.9px;
+    color: #3A3A3A;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.banner-btn {
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: none;
+    color: white;
+}
+
+.banner-img-container {
+    background-image: url(../images/Circle\ design.svg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 450px;
+    width: 450px;
+}
+
+.banner-img {
+    width: 400px;
+    height: 400px;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+/* banner design end */
+
+/* logo design start  */
+.logo-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    border-top: 2px solid rgb(182, 173, 173);
+    border-bottom: 2px solid rgb(182, 173, 173);
+    border-left: 0;
+    border-right: 0;
+    padding: 30px;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.logo-container img {
+    width: 60.051px;
+    height: 35.065px;
+
+}
+
+/* logo design end  */
+
+
+
+/****************** Responsive for small device ****************/
+
+
+@media screen and (max-width:576px) {
+
+    /* responsive navigation bar  */
+    .nav-container {
+        flex-direction: column;
+        margin: 30px 50px;
+    }
+
+    .nav-menues ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-menues ul li {
+        margin-top: 10px;
+        margin-right: 10px;
+    }
+
+    /* responsive banner */
+    .banner-container {
+        flex-direction: column;
+        text-align: center;
+
+    }
+
+    .banner-title {
+        font-size: 2rem;
+        font-weight: 700px;
+        width: 350px;
+        margin-top: -50px;
+    }
+
+    .banner-text {
+        font-size: 1rem;
+        font-weight: 400px;
+        width: 330px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+    .banner-img-container {
+        height: 340px;
+        width: 350px;
+        margin-top: 30px;
+    }
+
+    .banner-img {
+        height: 250px;
+        width: 250px;
+    }
+
+    /* responsive logos */
+    .logo-container {
+        border: none;
+        width: 350px;
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+}
+
+
+
+/**************** Responsive for medium device ***************/
+
+
+@media screen and (min-width:577px)and (max-width:980px) {
+
+    /* responsive navigation bar  */
+    .nav-container {
+        margin: 10px;
+    }
+
+    /* responsive banner */
+
+    .banner-container {
+        flex-direction: column;
+        text-align: center;
+        margin: 30px 50px;
+    }
+
+    .banner-img-container {
+        margin-top: 20PX;
+        height: 500px;
+        width: 500px;
+    }
+
+    .banner-img {
+        height: 400px;
+        width: 400px;
+    }
+
+    /* responsive logo */
+    .logo-container{
+        border: none;
+    }
+}
